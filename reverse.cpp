@@ -17,7 +17,7 @@ using namespace std;
 
 int main(){
 	string str = "give me a job";
-	string st = reverse(str);
-	cout << st +"\n";
+	str = reverse(str);
+	cout << str +"\n";
 	return 0;
 }
