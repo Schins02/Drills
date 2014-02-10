@@ -3,6 +3,7 @@
 
 using namespace std;
 
+ //reversing a string in place
  string reverse(string str){
  	int length = str.length();
  	int i = 0;
