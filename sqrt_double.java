@@ -1,7 +1,7 @@
 public class sqrt_double{
 
 	public static void main(String[] args){
-		//System.out.println("\n" + sqrt(9));
+		System.out.println("\n" + sqrt(9));
 		System.out.println("\n" + sqrt(.5));
 
 	}
