@@ -24,9 +24,4 @@ public class sqrt_double{
 		}
 		return left;
 	}
-
-
-
-
-
 }
