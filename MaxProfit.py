@@ -11,7 +11,7 @@ class Solution:
         	return 0
 
         start = 0
-        while((start < length - 1) and prices[start] > prices[start + 1]):
+        while start < length - 1 and prices[start] > prices[start + 1]:
         	start += 1
 
         if start == length - 1:
@@ -21,15 +21,15 @@ class Solution:
         lower_price_exists = False
         keep_iterating = True
 
-        while(keep_iterating):
+        while keep_iterating :
         	lower_price_exists = false
 
         	index = start + 1
-        	while(index in range(length)):
+        	while index in range(length):
 
         		if prices[start] < prices[index] and prices[index] - prices[start] > profit:
         			profit = prices[index] - prices[start]
-        		elif(prices[index] < prices[start] and not lower_price_exists):
+        		elif prices[index] < prices[start] and not lower_price_exists:
         			start = index
         			lower_price_exists = True
 
