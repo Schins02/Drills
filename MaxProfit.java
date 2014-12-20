@@ -8,11 +8,11 @@ public class Solution {
             return 0;
             
         int start = 0;
-        while((start < prices.length - 1) && (prices[start] > prices[start + 1])){
+        while((start < length - 1) && (prices[start] > prices[start + 1])){
             start++;
         }
 
-        if(start == prices.length - 1)
+        if(start == length - 2)
             return 0;
         
         int profit = 0;
@@ -21,7 +21,7 @@ public class Solution {
 
         while(keepIterating){
             lowerPriceExists = false;
-            
+
 	        for(int i = start + 1; i < length; i++){
 	        	if(prices[start] < prices[i] && (prices[i] - prices[start]) > profit)
 	                profit = prices[i] - prices[start];
@@ -29,7 +29,6 @@ public class Solution {
 	            	start = i;
 	            	lowerPriceExists = true;
 	            }
-
 	        }
 
 	        if(!lowerPriceExists || start == length - 2)
