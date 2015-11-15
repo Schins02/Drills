@@ -18,9 +18,6 @@ public class sqrt_double{
 				right = mid;
 			else
 				left = mid;
-			System.out.println(left);
-			System.out.println(mid);
-			System.out.println(right);
 		}
 		return left;
 	}

@@ -52,21 +52,11 @@ class Double_Linked_List(object)	:
 
 		return temp_node.data
 
-
-
+#begin
 my_list = Double_Linked_List()
 
 my_list.add(10)
 my_list.add(20)
 
 print(my_list.get(0))
-
-
-
-			
-
-
-
-
-
 

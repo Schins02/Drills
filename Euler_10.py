@@ -24,8 +24,3 @@ def sum_primes_below_limit(limit):
 
 
 print sum_primes_below_limit(2000000)
-
-
-
-
-
